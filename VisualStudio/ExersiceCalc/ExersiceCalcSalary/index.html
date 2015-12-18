@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Calca din lön din lök</title>
+	<meta charset="utf-8" />
+    <script src="Scripts/jquery-1.9.1.min.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+    <script src="script/index.js"></script>
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <p id="completed"></p>
+            <div class="col-md-12">
+                <form>
+                    <div class="form-group">
+                        <label for="lön">Lön</label>
+                        <input class="form-control" id="lön" placeholder="Lön">
+                    </div>
+                    <div class="form-group">
+                        <label for="grad">Sysselsättningsgrad</label>
+                        <input class="form-control" id="grad" placeholder="grad">
+                    </div>
+                    <div class="form-group">
+                        <label for="Skattetabell">Skattetabell</label>
+                        <div class="dropdown">
+                            
+                            <select id="Skattetabell">
+                                <option value="31">31</option>
+                                <option value="32">32</option>
+                                <option value="33">33</option>
+                                
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="Skattetabell">Åldersgrupp</label>
+                        <div class="dropdown">
+
+                            <select id="aldersGrupp">
+                                <option value="18">18-45</option>
+                                <option value="46">46-55</option>
+                                <option value="56">56-180</option>
+
+                            </select>
+                        </div>
+                    </div>
+                    <button class="btn btn-default" id="calcSalary">Beräkna</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
